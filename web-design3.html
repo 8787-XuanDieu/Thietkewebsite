@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile First | Thiết Kế Website Ưu Tiên Di Động</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fb;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+
+    .back:hover {
+      background: #8b5cf6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    header button {
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      background: white;
+      color: #8b5cf6;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    header button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .title h2 {
+      font-size: 36px;
+      color: #8b5cf6;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .content h3 {
+      color: #8b5cf6;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+      color: #555;
+    }
+
+    li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #8b5cf6;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #2d3748;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      font-size: 22px;
+      border: none;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back">← Quay về trang chủ</a>
+
+<header>
+  <h1>Mobile First – Ưu Tiên Di Động</h1>
+  <p>Tối ưu trải nghiệm mobile · Chuẩn Google · Tăng chuyển đổi & SEO</p>
+  <button onclick="scrollToForm()">Yêu cầu tư vấn</button>
+</header>
+
+<section>
+  <div class="title">
+    <h2>Mobile First là gì?</h2>
+  </div>
+
+  <div class="content">
+    <h3>📱 Định nghĩa</h3>
+    <p>
+      Mobile First là phương pháp thiết kế website tập trung tối ưu trải nghiệm người dùng,
+      giao diện và nội dung cho thiết bị di động trước, sau đó mới mở rộng cho tablet và desktop.
+      Đây là xu hướng bắt buộc trong bối cảnh phần lớn người dùng truy cập internet bằng điện thoại.
+    </p>
+  </div>
+
+  <div class="content">
+    <h3>📈 Cải thiện thứ hạng SEO (Mobile-First Indexing)</h3>
+    <ul>
+      <li>Google sử dụng phiên bản di động để lập chỉ mục và xếp hạng website</li>
+      <li>Website tối ưu mobile có cơ hội đạt thứ hạng cao hơn trên Google</li>
+      <li>Giảm lỗi hiển thị, tăng khả năng crawl và index</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>🎨 Nâng cao trải nghiệm người dùng (UX)</h3>
+    <ul>
+      <li>Bố cục rõ ràng, dễ đọc trên màn hình nhỏ</li>
+      <li>Nút bấm, thao tác chạm – vuốt thuận tiện</li>
+      <li>Giảm rối mắt, tập trung vào nội dung chính</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>⚡ Tối ưu tốc độ tải trang</h3>
+    <ul>
+      <li>Nội dung gọn nhẹ, ưu tiên tải nhanh trên di động</li>
+      <li>Giảm dung lượng hình ảnh và tài nguyên không cần thiết</li>
+      <li>Giảm tỷ lệ thoát (Bounce Rate)</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>💰 Tăng tỷ lệ chuyển đổi (Conversion Rate)</h3>
+    <ul>
+      <li>Khách hàng dễ dàng mua sắm, liên hệ, thanh toán trên điện thoại</li>
+      <li>Đặc biệt hiệu quả với website thương mại điện tử</li>
+      <li>Tăng doanh thu từ người dùng mobile</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>⏱️ Tiết kiệm chi phí & thời gian</h3>
+    <ul>
+      <li>Thiết kế từ nhỏ đến lớn giúp tối ưu quy trình phát triển</li>
+      <li>Giảm nội dung thừa và lỗi hiển thị</li>
+      <li>Dễ bảo trì hơn so với thiết kế desktop trước</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>🌍 Tiếp cận kháchi hơn người dùng</h3>
+    <ul>
+      <li>Hơn 90% lưu lượng truy cập đến từ thiết bị di động</li>
+      <li>Mobile First giúp doanh nghiệp tiếp cận khách hàng hiệu quả nhất</li>
+      <li>Nâng cao uy tín và khả năng cạnh tranh trên internet</li>
+    </ul>
+  </div>
+</section>
+
+<section id="form">
+  <div class="title">
+    <h2>Tư vấn thiết kế Website Mobile First</h2>
+  </div>
+
+  <form onsubmit="submitForm(event)" style="max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+    <input type="text" placeholder="Họ và tên *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="email" placeholder="Email *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="text" placeholder="Tên công ty" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <textarea placeholder="Mô tả yêu cầu website..." style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd; min-height: 120px;"></textarea>
+    <button type="submit" style="width: 100%; padding: 14px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer;">Gửi yêu cầu</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 – Mobile First Website | All Rights Reserved
+</footer>
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+  function scrollToForm() {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.');
+    e.target.reset();
+  }
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page Chuyên Đổi Cao – Phân Tích & Tối Ưu Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fb;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+
+    .back:hover {
+      background: #06b6d4;
+    }
+
+    header {
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 44px;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    header button {
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      background: white;
+      color: #06b6d4;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    header button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .content h3 {
+      color: #06b6d4;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+      color: #555;
+    }
+
+    li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #06b6d4;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #2d3748;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      font-size: 22px;
+      border: none;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back">← Quay về trang chủ</a>
+
+<header>
+  <h1>📊 Landing Page Chuyên Đổi Cao<br>Phân Tích & Tối Ưu Website</h1>
+  <p>Website không hiệu quả? Vấn đề không nằm ở traffic – mà ở <strong>chuyển đổi</strong></p>
+  <button onclick="scrollToForm()">Yêu cầu tư vấn</button>
+</header>
+
+<section>
+  <div class="content">
+    <p>
+      Bạn có lượt truy cập nhưng khách không để lại thông tin?
+      Chúng tôi giúp bạn <strong>phân tích – tối ưu – nâng cấp landing page</strong>
+      để biến người xem thành <strong>khách hàng thật</strong>.
+    </p>
+  </div>
+
+  <div class="content">
+    <h3>🔍 Phân tích chuyên sâu Landing Page</h3>
+    <ul>
+      <li>Phân tích hành vi người dùng (UX/UI)</li>
+      <li>Đánh giá bố cục – luồng đọc – điểm rơi CTA</li>
+      <li>Kiểm tra tốc độ tải & trải nghiệm mobile</li>
+      <li>Phân tích nội dung & tâm lý khách hàng</li>
+      <li>So sánh với đối thủ cùng ngành</li>
+    </ul>
+    <p><strong>📈 Chỉ ra chính xác lý do landing page không đổi cao</strong></p>
+  </div>
+
+  <div class="content">
+    <h3>⚙️ Tối ưu chuyển đổi (CRO)</h3>
+    <ul>
+      <li>Tối ưu bố cục theo hành vi người dùng</li>
+      <li>Viết lại headline – nội dung chốt đơn</li>
+      <li>Tối ưu CTA (màu sắc – vị trí – thông điệp)</li>
+      <li>Rút gọn form – tăng tỷ lệ điền thông tin</li>
+      <li>Thêm bằng chứng xã hội (feedback, số liệu, cam kết)</li>
+    </ul>
+    <p><strong>👉 Mục tiêu duy nhất: Tăng chuyển đổi – Giảm chi phí quảng cáo</strong></p>
+  </div>
+
+  <div class="content">
+    <h3>🚀 Kết quả bạn nhận được</h3>
+    <ul>
+      <li>Tỷ lệ chuyển đổi tăng 30–70%</li>
+      <li>Thời gian ở lại trang lâu hơn</li>
+      <li>Tăng lead – tăng đơn – tăng doanh thu</li>
+      <li>Website gọn gàng – chuyên nghiệp – dễ mở rộng</li>
+      <li>Chuẩn SEO & chuẩn quảng cáo</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>💎 Phù hợp với</h3>
+    <ul>
+      <li>Website chạy quảng cáo Facebook / Google</li>
+      <li>Landing page bán dịch vụ – khóa học</li>
+      <li>Doanh nghiệp có traffic nhưng không ra lead</li>
+      <li>Cá nhân, startup muốn tăng hiệu quả marketing</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>🛠️ Công cụ & phương pháp</h3>
+    <ul>
+      <li>Google Analytics / Heatmap</li>
+      <li>Phân tích Core Web Vitals</li>
+      <li>A/B Testing (nội dung – CTA – bố cục)</li>
+      <li>Tối ưu UX/UI theo hành vi người dùng thật</li>
+    </ul>
+  </div>
+</section>
+
+<section id="form">
+  <div style="text-align:center;margin-bottom:40px;">
+    <h2 style="color:#06b6d4;font-size:36px;">Yêu cầu tư vấn tối ưu Landing Page</h2>
+  </div>
+
+  <form onsubmit="submitForm(event)" style="max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+    <input type="text" placeholder="Họ và tên *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="email" placeholder="Email *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="tel" placeholder="Số điện thoại" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <textarea placeholder="Mô tả vấn đề website của bạn..." style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd; min-height: 120px;"></textarea>
+    <button type="submit" style="width: 100%; padding: 14px; background: linear-gradient(135deg, #06b6d4, #0891b2); color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer;">Gửi yêu cầu</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 – Landing Page Chuyên Đổi Cao | All Rights Reserved
+</footer>
+<!-- NÚT BACK TO TOP -->
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+<script>
+  function scrollToForm() {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.');
+    e.target.reset();
+  }
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>

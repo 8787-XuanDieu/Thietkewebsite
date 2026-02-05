@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page Chuyên Đổi Cao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fb;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+
+    .back:hover {
+      background: #06b6d4;
+    }
+
+    header {
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    header button {
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      background: white;
+      color: #06b6d4;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    header button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .title h2 {
+      font-size: 36px;
+      color: #06b6d4;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .content h3 {
+      color: #06b6d4;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+      color: #555;
+    }
+
+    li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #06b6d4;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #2d3748;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      font-size: 22px;
+      border: none;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back">← Quay về trang chủ</a>
+
+<header>
+  <h1>Landing Page Chuyên Đổi Cao</h1>
+  <p>Tối ưu trải nghiệm người dùng, tăng tỉ lệ chốt đơn từ 20% - 40%</p>
+  <button onclick="scrollToForm()">Yêu cầu tư vấn</button>
+</header>
+
+<section>
+  <div class="title">
+    <h2>Landing Page là gì?</h2>
+  </div>
+
+  <div class="content">
+    <h3>📌 Định nghĩa</h3>
+    <p>Landing Page là một trang web duy nhất được thiết kế đặc biệt nhằm chuyển đổi khách truy cập thành khách hàng. Mục tiêu chính là khiến người dùng thực hiện một hành động cụ thể như: mua hàng, đăng ký, tải ứng dụng, hoặc liên hệ.</p>
+  </div>
+
+  <div class="content">
+    <h3>🎯 Đặc điểm chính</h3>
+    <ul>
+      <li>Thiết kế đơn giản, tập trung vào 1 mục tiêu duy nhất</li>
+      <li>Call-to-Action (CTA) rõ ràng và hấp dẫn</li>
+      <li>Tối ưu tốc độ tải, không có menu phức tạp</li>
+      <li>Responsive, hoạt động tốt trên mọi thiết bị</li>
+      <li>Dễ nhớ, dễ chia sẻ, dễ theo dõi kết quả</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>💰 Lợi ích của Landing Page</h3>
+    <ul>
+      <li><strong>Tăng conversion rate:</strong> Tăng tỉ lệ chuyển đổi lên 2-3 lần so với website thường</li>
+      <li><strong>ROI cao:</strong> Chi phí quảng cáo được tối ưu, mang lại doanh thu tốt hơn</li>
+      <li><strong>Dễ test & cải tiến:</strong> A/B testing nhanh, điều chỉnh dễ dàng</li>
+      <li><strong>Xây dựng danh sách khách hàng:</strong> Thu thập email, số điện thoại cho marketing</li>
+      <li><strong>Tiết kiệm chi phí:</strong> Rẻ hơn xây dựng website đầy đủ</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>🔥 Yếu tố để Landing Page thành công</h3>
+    <ul>
+      <li>Tiêu đề hấp dẫn, rõ ràng lợi ích</li>
+      <li>Hình ảnh/video chất lượng cao</li>
+      <li>Nút CTA (Call-to-Action) nổi bật và dễ nhấn</li>
+      <li>Form liên hệ tối giản (3-5 trường thôi)</li>
+      <li>Testimonial/review từ khách hàng</li>
+      <li>Tốc độ tải cực nhanh (< 2 giây)</li>
+      <li>Không có link ngoài, giữ người dùng ở lại trang</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>📊 Ví dụ Landing Page hiệu quả</h3>
+    <p>Landing Page tốt thường có:</p>
+    <ul>
+      <li>Conversion rate 10-20% (website bình thường chỉ 2-5%)</li>
+      <li>Bounce rate dưới 50%</li>
+      <li>Thời gian ở trang trên 2 phút</li>
+      <li>SEO điểm cao (Core Web Vitals > 90)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="form">
+  <div class="title">
+    <h2>Yêu cầu tư vấn Landing Page</h2>
+  </div>
+
+  <form onsubmit="submitForm(event)" style="max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+    <input type="text" placeholder="Họ và tên *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="email" placeholder="Email *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="tel" placeholder="Số điện thoại" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <textarea placeholder="Mô tả nhu cầu..." style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd; min-height: 120px;"></textarea>
+    <button type="submit" style="width: 100%; padding: 14px; background: linear-gradient(135deg, #06b6d4, #0891b2); color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer;">Gửi yêu cầu</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 – Landing Page Chuyên Đổi Cao | All Rights Reserved
+</footer>
+<!-- NÚT BACK TO TOP -->
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+<script>
+  function scrollToForm() {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.');
+    e.target.reset();
+  }
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>

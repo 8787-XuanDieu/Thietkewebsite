@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dịch vụ thiết kế Website - Giải pháp web hoàn hảo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thiết kế website chuyên nghiệp, chuẩn SEO, Landing Page chuyển đổi cao. Tối ưu trải nghiệm người dùng, giúp doanh nghiệp tăng doanh thu." />
+ <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: white;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    header .subtitle {
+      font-size: 20px;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    header button {
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      background: white;
+      color: #4f46e5;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    header button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .title h2 {
+      font-size: 36px;
+      color: #4f46e5;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .title p {
+      font-size: 18px;
+      color: #666;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      padding: 30px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+      border-top: 4px solid #4f46e5;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #4f46e5;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .feature-list li {
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+      color: #666;
+    }
+
+    .feature-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #06b6d4;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .portfolio-item {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .portfolio-item a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .portfolio-item a:hover {
+      background: #06b6d4;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    form h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #4f46e5;
+      font-size: 24px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      font-family: inherit;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #4f46e5;
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+    }
+
+    footer {
+      background: #000000;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #06b6d4;
+      font-weight: 600;
+    }
+
+    .cta-section {
+      text-align: center;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 16px 40px;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+    }
+
+    .submit {
+      width: 100%;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      font-weight: bold;
+      transition: all 0.3s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    #backToTop:hover {
+      background: #06b6d4;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Thiết Kế Website Chuyên Nghiệp</h1>
+  <p>Giải pháp website hiện đại – chuẩn SEO – tối ưu trải nghiệm</p>
+  <button onclick="scrollToContact()">Liên hệ ngay</button>
+</header>
+
+<section>
+  <div class="title">
+    <h2>1. Website Doanh Nghiệp Chuyên Nghiệp</h2>
+    <p>Tạo dựa án web hiện đại, chuẩn thương hiệu</p>
+  </div>
+
+  <div class="services">
+    <a href="web-design.html" class="card">
+      <h3>🎨 Thiết kế đẹp mắt</h3>
+      <p>Giao diện chuyên nghiệp, theo xu hướng hiện đại, phù hợp với thương hiệu của bạn.</p>
+      <ul class="feature-list">
+        <li>Responsive design (mobile, tablet, desktop)</li>
+        <li>UI/UX hiện đại và thân thiện</li>
+        <li>Tối ưu tốc độ tải trang</li>
+      </ul>
+    </a>
+    <a href="web-design1.html" class="card">
+      <h3>⚡ Hiệu suất cao</h3>
+      <p>Website tải nhanh, ổn định, không gây lag.</p>
+      <ul class="feature-list">
+        <li>Tối ưu hóa file và hình ảnh</li>
+        <li>Server ổn định 99.9% uptime</li>
+        <li>Bảo mật SSL/HTTPS</li>
+      </ul>
+    </a>
+    <a href="web-design3.html" class="card">
+      <h3>📱 Mobile First</h3>
+      <p>Ưu tiên thiết kế di động, sẵn sàng cho mọi perangkat.</p>
+      <ul class="feature-list">
+        <li>Tương thích 100% trên smartphones</li>
+        <li>Giao diện cảm ứng mượt mà</li>
+        <li>Tối ưu tốc độ mobile</li>
+      </ul>
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="title">
+    <h2>2. Landing Page Chuyên Đổi Cao</h2>
+    <p>Tối ưu trải nghiệm người dùng, tăng tỉ lệ chốt đơn đến 40%</p>
+  </div>
+
+  <div class="services">
+    <a href="landing-page.html" class="card">
+      <h3>🎯 Tập trung chuyển đổi</h3>
+      <p>Thiết kế dành riêng để khách hàng hành động (mua hàng, đăng ký, liên hệ).</p>
+      <ul class="feature-list">
+        <li>Layout tối ưu conversion rate</li>
+        <li>Call-to-action rõ ràng, dễ thấy</li>
+        <li>Form đơn giản, dễ điền</li>
+      </ul>
+    </a>
+    <a href="landing-page2.html" class="card">
+      <h3>🔥 Thiết kế hiệu ứng</h3>
+      <p>Animation mượt mà, hiệu ứng hấp dẫn giữ chân khách.</p>
+      <ul class="feature-list">
+        <li>Parallax scroll hiệu ứng</li>
+        <li>Hover effects tương tác</li>
+        <li>Reveal animation khi load</li>
+      </ul>
+    </a>
+    <a href="landing-page3.html" class="card">
+      <h3>📊 Phân tích & tối ưu</h3>
+      <p>Theo dõi hành vi khách, tối ưu dần dần.</p>
+      <ul class="feature-list">
+        <li>Tích hợp Google Analytics</li>
+        <li>Heatmap theo dõi click</li>
+        <li>A/B testing sẵn sàng</li>
+      </ul>
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="title">
+    <h2>3. Website Chuẩn SEO</h2>
+    <p>Giúp website dễ lên top Google, tăng traffic organic tự nhiên</p>
+  </div>
+
+  <div class="services">
+    <a href="seo.html" class="card">
+      <h3>🔍 Tối ưu SEO On-page</h3>
+      <p>Code clean, semantic HTML, structure sạch cho Google hiểu.</p>
+      <ul class="feature-list">
+        <li>Meta tags & descriptions tối ưu</li>
+        <li>Heading structure H1-H6 chuẩn</li>
+        <li>URL friendly, không ký tự lạ</li>
+        <li>Schema markup cho rich snippets</li>
+      </ul>
+    </a>
+    <a href="seo1.html" class="card">
+      <h3>⚙️ Tối ưu SEO Technical</h3>
+      <p>Cấu trúc kỹ thuật đúng chuẩn, crawlable tốt.</p>
+      <ul class="feature-list">
+        <li>Sitemap.xml & robots.txt chuẩn</li>
+        <li>Không lỗi 404 hoặc redirect xấu</li>
+        <li>Core Web Vitals tối ưu</li>
+        <li>Mobile-first indexing</li>
+      </ul>
+    </a>
+    <a href="seo2.html" class="card">
+      <h3>📈 Tăng tốc độ & Performance</h3>
+      <p>Tối ưu tốc độ là yêu tố xếp hạng Google.</p>
+      <ul class="feature-list">
+        <li>Google PageSpeed > 90</li>
+        <li>Image optimization tự động</li>
+        <li>CDN toàn cầu tăc tốc</li>
+        <li>Lazy loading thông minh</li>
+      </ul>
+    </a>
+  </div>
+</section>
+
+<section class="portfolio">
+  <div class="title">
+    <h2>Portfolio - Dự Án Tiêu Biểu</h2>
+    <p>Các website chúng tôi đã thiết kế thành công cho các doanh nghiệp</p>
+  </div>
+
+  <div class="portfolio-item">
+    <h3>Thiết Bị Máy Móc - Công Ty Toàn Tiến Phát</h3>
+    <a href="http://congtydienototoantienphat.com/" target="_blank">🔗 Xem trang web</a>
+    <img src="images/portfolio1.jpg" alt="Portfolio 1">
+  </div>
+
+  <div class="portfolio-item">
+    <h3>Dự Án Khác</h3>
+    <a href="https://8787-xuandieu.github.io/ThiepMoiTotNghiep/" target="_blank">🔗 Xem trang web</a>
+    <img src="images/portfolio2.jpg" alt="Portfolio 2">
+  </div>
+</section>
+
+<section>
+  <div class="title">
+    <h2>Quy Trình Làm Việc</h2>
+  </div>
+
+  <div class="services">
+    <div class="card" style="cursor: default;">
+      <h3>1. Tư vấn & Phân tích</h3>
+      <p>Tìm hiểu nhu cầu, mục tiêu, đối tượng khách hàng của bạn.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>2. Thiết kế & Prototype</h3>
+      <p>Tạo mockup, thiết kế giao diện duyệt trước khi phát triển.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>3. Phát triển & Code</h3>
+      <p>Lập trình chuyên nghiệp, code sạch, theo chuẩn.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>4. Test & QA</h3>
+      <p>Kiểm thử toàn bộ, đảm bảo không lỗi, hoạt động tốt.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>5. Triển khai & Launch</h3>
+      <p>Deploy server, setup domain, SSL, email.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>6. Hỗ trợ & Bảo trì</h3>
+      <p>Cập nhật bảo mật, sửa lỗi, hỗ trợ 24/7.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="title">
+    <h2>Bảng Giá Dịch Vụ</h2>
+  </div>
+
+  <div class="services">
+    <div class="card" style="cursor: default;">
+      <h3>Website Cơ Bản</h3>
+      <p><strong>2,000,000 - 5,000,000 VNĐ</strong></p>
+      <ul class="feature-list">
+        <li>1-5 trang HTML/CSS</li>
+        <li>Responsive design</li>
+        <li>Liên hệ form đơn</li>
+        <li>Domain + Hosting 1 năm</li>
+      </ul>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>Website Chuyên Nghiệp</h3>
+      <p><strong>5,000,000 - 15,000,000 VNĐ</strong></p>
+      <ul class="feature-list">
+        <li>10-20 trang động</li>
+        <li>SEO tối ưu</li>
+        <li>Blog & tin tức</li>
+        <li>Admin quản lý nội dung</li>
+      </ul>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>Landing Page</h3>
+      <p><strong>3,000,000 - 8,000,000 VNĐ</strong></p>
+      <ul class="feature-list">
+        <li>1 trang duy nhất</li>
+        <li>Tối ưu chuyển đổi</li>
+        <li>Nút CTA rõ ràng</li>
+        <li>Analytics tích hợp</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="title">
+    <h2>Liên Hệ Tư Vấn Miễn Phí</h2>
+    <p>Hãy cho chúng tôi biết dự án của bạn, chúng tôi sẽ liên hệ trong 24h</p>
+  </div>
+
+  <form onsubmit="submitForm(event)">
+    <h3>Gửi thông tin liên hệ</h3>
+    <input type="text" placeholder="Họ và tên *" required>
+    <input type="email" placeholder="Email *" required>
+    <input type="tel" placeholder="Số điện thoại">
+    <input type="text" placeholder="Tên công ty / Doanh nghiệp">
+    <textarea placeholder="Mô tả dự án, nhu cầu của bạn..."></textarea>
+    <button type="submit" class="submit">Gửi liên hệ</button>
+  </form>
+</section>
+
+<section>
+  <div class="title">
+    <h2>Tại Sao Chọn Chúng Tôi?</h2>
+  </div>
+
+  <div class="services">
+    <div class="card" style="cursor: default;">
+      <h3>✓ Kinh Nghiệm 10+ Năm</h3>
+      <p>Đã hoàn thành 500+ dự án website cho các doanh nghiệp lớn nhỏ.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>✓ Team Chuyên Nghiệp</h3>
+      <p>Designer, Developer, QA tay nghề cao, say mê công việc.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>✓ Tư Vấn Chi Tiết</h3>
+      <p>Hỗ trợ bạn từ ý tưởng đến ra sản phẩm hoàn chỉnh.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>✓ Giá Cạnh Tranh</h3>
+      <p>Chất lượng tốt nhất với giá hợp lý, không phí ẩn.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>✓ Hỗ Trợ 24/7</h3>
+      <p>Bảo trì, sửa chữa, update bảo mật hỗ trợ liên tục.</p>
+    </div>
+    <div class="card" style="cursor: default;">
+      <h3>✓ Bảo Mật Cao</h3>
+      <p>SSL, backup tự động, bảo vệ dữ liệu khách hàng chắc chắn.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div style="margin-bottom: 20px;">
+    <h3 style="color: white; margin-bottom: 10px;">Thiết Kế Website Chuyên Nghiệp</h3>
+    <p>Địa chỉ: Lầu 1 Tòa nhà Saigon ICT, Lô 46 Công viên phần mềm Quang Trung, Phường Trung Mỹ Tây, Thành phố Hồ Chí Minh, Việt Nam</p>
+    <p>Điện thoại: <strong>0353.915.313</strong></p>
+    <p>Email: <strong>xuandieunasani@gmail.com</strong></p>
+    <p>Website: <strong>https://nasani.vn/</strong></p>
+  </div>
+  <hr style="border: none; border-top: 1px solid #444; margin: 20px 0;">
+  <p>© 2026 – Dịch Vụ Thiết Kế Website | by XuanDieu.vn</p>
+  <p style="font-size: 12px; margin-top: 10px;">Thiết kế với ❤️ để tạo những website tuyệt vời</p>
+</footer>
+
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+  function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  }
+
+  async function submitForm(e) {
+    e.preventDefault();
+    const form = e.target;
+    
+    // Lấy giá trị từ form (dựa trên thứ tự input)
+    const inputs = form.querySelectorAll('input, textarea');
+    const name = inputs[0].value; // Họ và tên
+    const email = inputs[1].value; // Email
+    const phone = inputs[2].value; // Số điện thoại
+    const company = inputs[3].value; // Tên công ty
+    const description = inputs[4].value; // Mô tả dự án
+    
+    console.log('Dữ liệu form:', { name, email, phone, company, description }); // Debug log
+    
+    // Chuẩn bị dữ liệu JSON
+    const data = {
+      name: name,
+      email: email,
+      phone: phone,
+      company: company,
+      description: description
+    };
+    
+    try {
+      console.log('Gửi request đến:', 'https://script.google.com/macros/s/AKfycbykWwO_klf2lTVyZKwM2npisfFD-kFuJJPnk5Jq5h2bdCkYvGXsXX-QXsNi39VuliLTVA/exec'); // Debug log
+      // Gửi POST request đến Apps Script URL
+      const response = await fetch('https://script.google.com/macros/s/AKfycbykWwO_klf2lTVyZKwM2npisfFD-kFuJJPnk5Jq5h2bdCkYvGXsXX-QXsNi39VuliLTVA/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      console.log('Response status:', response.status); // Debug log
+      const result = await response.json();
+      console.log('Response data:', result); // Debug log
+      
+      if (result.status === 'success') {
+        alert('Cảm ơn bạn! Thông tin đã được gửi thành công. Chúng tôi sẽ liên hệ trong 24h.');
+      } else {
+        alert('Có lỗi xảy ra: ' + result.message);
+      }
+    } catch (error) {
+      console.error('Lỗi fetch:', error); // Debug log
+      alert('Lỗi kết nối: ' + error.message);
+    }
+    
+    // Reset form sau khi submit
+    form.reset();
+  }
+
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>

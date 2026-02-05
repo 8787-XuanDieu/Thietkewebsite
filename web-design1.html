@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Hiệu Suất Cao | High-Performance Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fb;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+
+    .back:hover {
+      background: #8b5cf6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    header button {
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      background: white;
+      color: #8b5cf6;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    header button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .title h2 {
+      font-size: 36px;
+      color: #8b5cf6;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .content h3 {
+      color: #8b5cf6;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+      color: #555;
+    }
+
+    li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #8b5cf6;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #2d3748;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      font-size: 22px;
+      border: none;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back">← Quay về trang chủ</a>
+
+<header>
+  <h1>Website Hiệu Suất Cao (High-Performance)</h1>
+  <p>Tải nhanh dưới 2–3 giây · Mượt mà · Bảo mật · Chuẩn Mobile & SEO</p>
+  <button onclick="scrollToForm()">Yêu cầu tư vấn</button>
+</header>
+
+<section>
+  <div class="title">
+    <h2>Website Hiệu Suất Cao là gì?</h2>
+  </div>
+
+  <div class="content">
+    <h3>⚡ Định nghĩa</h3>
+    <p>
+      Website hiệu suất cao (High-Performance Website) là trang web được tối ưu để tải nhanh (dưới 2–3 giây),
+      hoạt động mượt mà, bảo mật tốt và thân thiện với thiết bị di động.
+      Website dạng này giúp nâng cao trải nghiệm người dùng, tăng tỷ lệ chuyển đổi
+      và cải thiện thứ hạng SEO trên Google.
+    </p>
+  </div>
+
+  <div class="content">
+    <h3>🚀 Tối ưu hóa tốc độ (Speed Optimization)</h3>
+    <ul>
+      <li>Sử dụng CDN (Content Delivery Network) để phân phối nội dung từ máy chủ gần người dùng nhất</li>
+      <li>Nén hình ảnh, sử dụng định dạng hiện đại như WebP để giảm dung lượng</li>
+      <li>Giảm thiểu và gộp các tệp CSS, JavaScript</li>
+      <li>Tối ưu thời gian phản hồi của máy chủ (TTFB)</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>🎨 Giao diện & Trải nghiệm người dùng (UI/UX)</h3>
+    <ul>
+      <li>Thiết kế Responsive – thân thiện trên mọi thiết bị</li>
+      <li>Điều hướng đơn giản, dễ sử dụng</li>
+      <li>Ưu tiên hiển thị nội dung quan trọng trên màn hình đầu tiên (Above the Fold)</li>
+      <li>Giao diện nhẹ, hạn chế hiệu ứng nặng gây chậm tải</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>🔐 Kỹ thuật & Bảo mật</h3>
+    <ul>
+      <li>Sử dụng hosting uy tín, hiệu năng cao</li>
+      <li>Áp dụng chứng chỉ bảo mật SSL / HTTPS</li>
+      <li>Tối ưu cơ sở dữ liệu</li>
+      <li>Tận dụng cơ chế lưu trữ đệm (Caching)</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>📈 SEO & Nội dung</h3>
+    <ul>
+      <li>Tối ưu thẻ meta (title, description)</li>
+      <li>Tối ưu thẻ alt cho hình ảnh</li>
+      <li>Cấu trúc website rõ ràng, dễ hiểu cho công cụ tìm kiếm</li>
+      <li>Nội dung chất lượng, đáp ứng đúng nhu cầu người dùng</li>
+    </ul>
+  </div>
+</section>
+
+<section id="form">
+  <div class="title">
+    <h2>Tư vấn xây dựng Website Hiệu Suất Cao</h2>
+  </div>
+
+  <form onsubmit="submitForm(event)" style="max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+    <input type="text" placeholder="Họ và tên *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="email" placeholder="Email *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="text" placeholder="Tên công ty" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <textarea placeholder="Mô tả yêu cầu website..." style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd; min-height: 120px;"></textarea>
+    <button type="submit" style="width: 100%; padding: 14px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer;">Gửi yêu cầu</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 – Website Hiệu Suất Cao | All Rights Reserved
+</footer>
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+  function scrollToForm() {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.');
+    e.target.reset();
+  }
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
+</body>
+</html>

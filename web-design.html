@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thiết Kế Website Doanh Nghiệp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fb;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s;
+      font-weight: 600;
+    }
+
+    .back:hover {
+      background: #8b5cf6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    header button {
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      background: white;
+      color: #8b5cf6;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    header button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .title h2 {
+      font-size: 36px;
+      color: #8b5cf6;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .content h3 {
+      color: #8b5cf6;
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    li {
+      padding: 10px 0;
+      padding-left: 30px;
+      position: relative;
+      color: #555;
+    }
+
+    li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #8b5cf6;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #2d3748;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+      color: white;
+      font-size: 22px;
+      border: none;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    #backToTop:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="back">← Quay về trang chủ</a>
+
+<header>
+  <h1>Thiết Kế Website Doanh Nghiệp</h1>
+  <p>Giải pháp web chuyên nghiệp, hiện đại, chuẩn SEO cho doanh nghiệp</p>
+  <button onclick="scrollToForm()">Yêu cầu tư vấn</button>
+</header>
+
+<section>
+  <div class="title">
+    <h2>Website Doanh Nghiệp là gì?</h2>
+  </div>
+
+  <div class="content">
+    <h3>🏢 Định nghĩa</h3>
+    <p>Website doanh nghiệp (Corporate Website) là một trang web đại diện cho hình ảnh, thông tin, sản phẩm/dịch vụ của công ty. Nó giúp khách hàng tìm hiểu về doanh nghiệp, tạo niềm tin, và hỗ trợ bán hàng trực tuyến.</p>
+  </div>
+
+  <div class="content">
+    <h3>📊 Loại Website Doanh Nghiệp</h3>
+    <ul>
+      <li><strong>Website giới thiệu:</strong> Thông tin công ty, sản phẩm, dịch vụ, liên hệ</li>
+      <li><strong>Website bán hàng (E-commerce):</strong> Bán sản phẩm online</li>
+      <li><strong>Website dịch vụ:</strong> Khiêu gợi, đặt lịch, thanh toán online</li>
+      <li><strong>Website blog/tin tức:</strong> Chia sẻ kiến thức, tin tức ngành</li>
+      <li><strong>Website portfolio:</strong> Giới thiệu dự án, portfolio công ty</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>🎯 Mục tiêu Website Doanh Nghiệp</h3>
+    <ul>
+      <li>Xây dựng uy tín, hình ảnh chuyên nghiệp</li>
+      <li>Tăng nhận diện thương hiệu trên internet</li>
+      <li>Thu thập khách hàng tiềm năng (lead generation)</li>
+      <li>Hỗ trợ bán hàng, tăng doanh thu</li>
+      <li>Giảm chi phí quản lý, tăng hiệu quả</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>✨ Đặc điểm Website Doanh Nghiệp Chuyên Nghiệp</h3>
+    <ul>
+      <li>Thiết kế chuyên nghiệp, hiện đại, phù hợp thương hiệu</li>
+      <li>Giao diện dễ sử dụng (UX/UI tốt)</li>
+      <li>Responsive (hoạt động tốt trên mọi thiết bị)</li>
+      <li>Tốc độ tải nhanh ( 3 giây)</li>
+      <li>SEO tối ưu, dễ tìm kiếm</li>
+      <li>Bảo mật cao, HTTPS/SSL</li>
+      <li>Có hệ thống quản lý nội dung (CMS)</li>
+      <li>Hỗ trợ khách hàng (chat, form liên hệ)</li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h3>💰 Giá Website Doanh Nghiệp</h3>
+    <ul>
+      <li><strong>Website cơ bản (5-10 trang):</strong> 3-8 triệu VNĐ</li>
+      <li><strong>Website chuyên nghiệp (15-30 trang):</strong> 8-20 triệu VNĐ</li>
+      <li><strong>Website e-commerce:</strong> 20-50 triệu VNĐ</li>
+      <li><strong>Website độc lập, tùy chỉnh:</strong> Tính theo yêu cầu</li>
+    </ul>
+  </div>
+</section>
+
+<section id="form">
+  <div class="title">
+    <h2>Yêu cầu tư vấn thiết kế website</h2>
+  </div>
+
+  <form onsubmit="submitForm(event)" style="max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
+    <input type="text" placeholder="Họ và tên *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="email" placeholder="Email *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <input type="text" placeholder="Tên công ty" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd;">
+    <textarea placeholder="Mô tả dự án website..." style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 6px; border: 1px solid #ddd; min-height: 120px;"></textarea>
+    <button type="submit" style="width: 100%; padding: 14px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer;">Gửi yêu cầu</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 – Thiết Kế Website Doanh Nghiệp | All Rights Reserved
+</footer>
+<!-- NÚT BACK TO TOP -->
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+  function scrollToForm() {
+    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+    alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm.');
+    e.target.reset();
+  }
+ const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+</script>
+
+</body>
+</html>
